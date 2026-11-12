@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experience | CA Avinash Kumar Singh</title>
+  <meta name="description" content="Professional journey of CA Avinash Kumar Singh: Partner at S.G.A.S & Associates, Financial Advisor and Audit Associate in Kathmandu, Nepal.">
+  <meta property="og:title" content="CA Avinash Kumar Singh | Chartered Accountant">
+  <meta property="og:description" content="Audit, Tax & NFRS consultant helping businesses in Nepal stay compliant and profitable.">
+  <meta property="og:url" content="https://casinghavinash.com.np/experience.html">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>Anamnagar, Kathmandu, Nepal</span>
+      <span>
+        <a href="tel:+9779768553543">📞 +977 9768553543</a>
+        <a href="mailto:avinash.rrp@gmail.com">✉️ avinash.rrp@gmail.com</a>
+      </span>
+    </div>
+  </div>
+
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand" aria-label="Home">
+        <span class="brand-mark">AS</span>
+        <span class="brand-text">CA Avinash Kumar Singh</span>
+      </a>
+      <button class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="nav-links" class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="experience.html" class="active" aria-current="page">Experience</a>
+        <a href="contact.html" class="btn btn-small">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <div class="container">
+        <p class="eyebrow">Experience</p>
+        <h1>Experience</h1>
+      </div>
+    </section>
+    <!-- EXPERIENCE -->
+    <section class="section">
+      <div class="container narrow">
+        <p class="eyebrow">Experience</p>
+        <h2 class="section-title">Professional journey</h2>
+        <ol class="timeline">
+          <li>
+            <span class="date">Nov 2026 – Present</span>
+            <h3>Partner</h3>
+            <p class="org">S.G.A.S &amp; Associates · Kathmandu</p>
+          </li>
+          <li>
+            <span class="date">May 2026 – Nov 2026</span>
+            <h3>Financial Advisor</h3>
+            <p class="org">Sakshyam Gautam &amp; Associates · Anamnagar, Kathmandu</p>
+          </li>
+          <li>
+            <span class="date">Aug 2023 – Jul 2026</span>
+            <h3>Audit Associate</h3>
+            <p class="org">R.R.P. Associates, Chartered Accountants</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year">2026</span> CA Avinash Kumar Singh · casinghavinash.com.np</p>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.querySelector('.menu-btn');
+    const links = document.getElementById('nav-links');
+    btn.addEventListener('click', () => {
+      const open = links.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open);
+    });
+    links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      links.classList.remove('open');
+      btn.setAttribute('aria-expanded', 'false');
+    }));
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | CA Avinash Kumar Singh</title>
+  <meta name="description" content="Audit, VAT & income tax advisory, NFRS/NAS financial statements, IPO documentation, projections and IRD compliance services in Kathmandu, Nepal.">
+  <meta property="og:title" content="CA Avinash Kumar Singh | Chartered Accountant">
+  <meta property="og:description" content="Audit, Tax & NFRS consultant helping businesses in Nepal stay compliant and profitable.">
+  <meta property="og:url" content="https://casinghavinash.com.np/services.html">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>Anamnagar, Kathmandu, Nepal</span>
+      <span>
+        <a href="tel:+9779768553543">📞 +977 9768553543</a>
+        <a href="mailto:avinash.rrp@gmail.com">✉️ avinash.rrp@gmail.com</a>
+      </span>
+    </div>
+  </div>
+
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand" aria-label="Home">
+        <span class="brand-mark">AS</span>
+        <span class="brand-text">CA Avinash Kumar Singh</span>
+      </a>
+      <button class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="nav-links" class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html" class="active" aria-current="page">Services</a>
+        <a href="experience.html">Experience</a>
+        <a href="contact.html" class="btn btn-small">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <div class="container">
+        <p class="eyebrow">Services</p>
+        <h1>Services</h1>
+      </div>
+    </section>
+    <!-- SERVICES -->
+    <section class="section section-alt">
+      <div class="container">
+        <p class="eyebrow">Services</p>
+        <h2 class="section-title">How I can help</h2>
+        <div class="grid">
+          <article class="card">
+            <div class="icon">🔍</div>
+            <h3>Statutory &amp; Internal Audit</h3>
+            <p>Independent audits that meet regulatory requirements and strengthen your internal control systems.</p>
+          </article>
+          <article class="card">
+            <div class="icon">🧾</div>
+            <h3>VAT &amp; Income Tax Advisory</h3>
+            <p>Tax planning, VAT compliance and advisory to keep your business efficient and penalty-free.</p>
+          </article>
+          <article class="card">
+            <div class="icon">📊</div>
+            <h3>Financial Statements (NFRS/NAS)</h3>
+            <p>Preparation of accurate financial statements in line with Nepal Financial Reporting Standards.</p>
+          </article>
+          <article class="card">
+            <div class="icon">📈</div>
+            <h3>IPO Documentation</h3>
+            <p>Support with IPO documentation and regulatory compliance for companies going public.</p>
+          </article>
+          <article class="card">
+            <div class="icon">💡</div>
+            <h3>Projections &amp; Budgeting</h3>
+            <p>Financial projections and budgets that support lending, investment and planning decisions.</p>
+          </article>
+          <article class="card">
+            <div class="icon">🏛️</div>
+            <h3>IRD Compliance &amp; Tax Filing</h3>
+            <p>Timely tax filing and Inland Revenue Department compliance, plus consolidation of group financials.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year">2026</span> CA Avinash Kumar Singh · casinghavinash.com.np</p>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.querySelector('.menu-btn');
+    const links = document.getElementById('nav-links');
+    btn.addEventListener('click', () => {
+      const open = links.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open);
+    });
+    links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      links.classList.remove('open');
+      btn.setAttribute('aria-expanded', 'false');
+    }));
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
